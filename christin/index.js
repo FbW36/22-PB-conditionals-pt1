@@ -31,6 +31,11 @@ let a = 99;
 let b = 99;
 let c = 88;
 
+// option 1
+console.log("Math max", Math.max(a, b, c));
+
+//option 2
+
 if (a > b && a > c) {
   console.log(`${a} is the largest value`);
 } else if (b > a && b > c) {
