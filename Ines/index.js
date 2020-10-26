@@ -43,14 +43,16 @@ else{
     console.log("3==> c is the biggest value");
 }
 
-//4.
-let newString = "Pygolope"
 
-if(newString.includes("Py")){
+
+//4.
+let newString = "golopePy"
+
+if(newString.startsWith("Py")){
     console.log("4==>",newString);
 }
 else{
-    console.log("4==> Does not include Py");
+    console.log("4==> Does not begin with Py");
 }
 
 //5.
@@ -77,7 +79,7 @@ else{
 
 //7
 let math1 = 10;
-let math2 = 15;
+let math2 = 10;
 
 if(math1===15 || math2===15){
     console.log("7==>", true);
@@ -115,10 +117,19 @@ else{
 }
 
 //10.
-let math7 = 20;
+let math7 = 21;
 if(math7>19){
     console.log("10==>",(math7-19)*2);
 }
 else{
     console.log("10==> math7 is not greater than 19");
+}
+
+let math8 = Math.abs(math7-19);
+let math8Multiply = math8 *2;
+if(math7>19){
+    console.log(math8Multiply);
+}
+else{
+    console.log("Not bigger than 19");
 }
