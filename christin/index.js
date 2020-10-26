@@ -28,7 +28,7 @@ if (val1 >= 50 && val1 <= 99) {
 //? 3.Declare the variables a, b and c, and give them number values.Check which one out of the three variables has the largest value and print it to the console.Then change the values of the variables to see if your conditional still works.
 
 let a = 99;
-let b = 99;
+let b = 77;
 let c = 88;
 
 // option 1
@@ -36,11 +36,11 @@ console.log("Math max", Math.max(a, b, c));
 
 //option 2
 
-if (a > b && a > c) {
+if (a > (b || c)) {
   console.log(`${a} is the largest value`);
-} else if (b > a && b > c) {
+} else if (b > (a || c)) {
   console.log(`${b} is the largest value`);
-} else if (c > a && c > b) {
+} else if (c > (a || b)) {
   console.log(`${c} is the largest value`);
 } else {
   console.log("No highest value, at least 2 variables are equal");
