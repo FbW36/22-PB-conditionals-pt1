@@ -27,7 +27,6 @@ if (resValue1 || resValue3 || resValue3) {
 let a = 18;
 let b = 40;
 let c = 88;
-console.log(Math.max(a, b, c));
 
 if (
   a === Math.max(a, b, c) ||
@@ -51,7 +50,7 @@ if (
 let str1 = "Javascript";
 let str2 = `Py ${str1}`;
 
-if (str2.includes("Py")) {
+if (str2.slice(0, 2) === "Py") {
   console.log(str1);
 }
 
@@ -61,7 +60,7 @@ let y = 8;
 let sum = x * y;
 
 if (sum > 50 || sum < 80) {
-  console.log("65");
+  console.log(65);
 } else {
   console.log(80);
 }
