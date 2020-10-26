@@ -55,11 +55,10 @@ if (str2.slice(0, 2) === "Py") {
 }
 
 // 5.
-let x = 7;
-let y = 8;
-let sum = x * y;
+let x = 37;
+let y = 28;
 
-if (sum > 50 || sum < 80) {
+if (x + y > 50 && x + y < 80) {
   console.log(65);
 } else {
   console.log(80);
@@ -69,46 +68,38 @@ if (sum > 50 || sum < 80) {
 let x1 = 4;
 let y1 = 12;
 
-let sum1 = x1 * y1;
-let sum2 = x1 - y1;
-if (sum1 == 8 || sum2 == 8) {
+if (x1 + y1 === 8 || x1 - y1 === 8) {
   console.log(true);
 }
 
 // 7.
 let x2 = 5;
 let y2 = 20;
-let sum3 = x2 || y2 == 15;
-let sum4 = x2 * y2 == 15;
 
-if (sum3 || sum4) {
+if (x2 === 15 || y2 === 15 || x2 + y2 === 15) {
   console.log(true);
 }
 
 // 8.
 let x3 = 35;
 let y3 = 80;
-let sum5 = x3 % 7 === 0;
-let sum6 = y3 % 11 === 0;
 
-if (sum5 || sum6) {
+if (x3 % 7 === 0 || y3 % 11 === 0) {
   console.log(true);
 }
 
 // 9.
-let x4 = 35;
-let y4 = 80;
-let sum7 = x4 * x4;
-let sum8 = y4 * y4;
+let x4 = 15;
+let y4 = 12;
+let sum = x4 + y4;
 
-if (sum7 === sum8) {
-  console.log(sum7 ** 3);
+if (x4 === y4) {
+  console.log(3 * sum);
 }
 
 // 10
 let x5 = 48;
-let sum9 = x5 - 19;
 
 if (x5 > 19) {
-  console.log(sum9 * sum9);
+  console.log(2 * (x5 - 19));
 }
