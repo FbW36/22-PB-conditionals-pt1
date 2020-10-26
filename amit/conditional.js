@@ -38,8 +38,9 @@ if (a - b < 0) {
   console.log(a);
 }
 // 4 Create a new string adding "Py" in front of a given string. If the given string begins with "Py" then print the original string.
-let str = "python";
-if (str.includes("py") === true) {
+let str = "thon";
+let str2 = `py${str}`;
+if (str2.includes("py") === true) {
   console.log("ans4=", str);
 } else {
   console.log("ans4=", not);
@@ -86,21 +87,24 @@ if (res || res2 === true) {
 } else {
   console.log("ans8=", false); // false
 }
-// 9 Calculate the sum of the two given integers. If the two values are the same, then print triple their sum.
+// 9 Calculate the sum of the two given integers.
+//If the two values are the same, then print triple their sum.
 let one = 2;
 let two = 2;
+let summ = one + two;
 if (one === two) {
-  console.log("ans9=", Math.pow(one, 3));
+  console.log("ans9=", 3 * summ); // 12
 } else {
   console.log("ans9=", 0);
 }
 
-// 10 Calculate the difference between a specified number and 19. Print double the difference if the specified number is greater than 19.
+// 10 Calculate the difference between a specified number and 19.
+// Print double the difference if the specified number is greater than 19.
 let numbrr = 21;
 let numbrr2 = 19;
 let difference = numbrr - numbrr2;
 if (numbrr > numbrr2) {
-  console.log("ans10=", Math.pow(difference, 2)); // 4
+  console.log("ans10=", 2 * difference); // 4
 } else {
   console.log("ans10=", false);
 }
