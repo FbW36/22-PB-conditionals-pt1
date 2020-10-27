@@ -6,7 +6,7 @@
 let num1 = 49;
 let num2 = 100;
 
-if(num1 >=50 && num2 <= 90){
+if((num1 >=50 && num2 <= 90) || (num1 >= 50 && num2 <= 99);){
     console.log("they are in the range of 50 and 90 ==> ");
 }else {
     console.log("they are NOT in the range of 50 and 90");
@@ -17,7 +17,7 @@ if(num1 >=50 && num2 <= 90){
 
 let num3 = 100;
 
-if(num1>=50 || num2 <=99 || num3 <=99){
+if(num1 >= 50 && num1 <= 99) || (num2 >= 50 && num2 <= 99) || (num3 >= 50 && num3 <= 99);{
     console.log("they are in the range of 50 and 99");
 } else{
     console.log("they are NOT in the range of 50 and 99");
@@ -35,12 +35,11 @@ console.log("highest Value", highestValue);
 
 //Create a new string adding "Py" in front of a given string. If the given string begins with "Py" then print the original string.
 
-let givenString = "Py cats are cute, but dogs also"
-if(givenString.includes("Py")){
-    console.log("Py ==> ", givenString);
-}else{
-    console.log("does not include Py");
-}
+let givenString = "hi ciamac";
+let newString = `Py${givenString}`;
+let originalString = "The original string?";
+if (givenString.slice(0, 2) === "Py") console.log(originalString);
+else console.log(newString);
 
 //  Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80.
 
