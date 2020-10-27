@@ -4,10 +4,10 @@ console.log("integer1:", integer1);
 let integer2 = Math.floor(Math.random() * 150);
 console.log("integer2:", integer2);
 
-let withinTheRange = (integer1 >= 50 && integer1 <= 99) && (integer2 >= 50 && integer2 <= 99);
+let withinTheRange = (integer1 >= 50 && integer1 <= 99) || (integer2 >= 50 && integer2 <= 99);
 
 if (withinTheRange) {
-	console.log("both integers are within the range:", withinTheRange);
+	console.log("one of the integers (or both of them) are within the range:", withinTheRange);
 }
 
 // 2. Check if three given integer values are in the range 50 to 99 (inclusive). Print true if one or more of them are in the range.
