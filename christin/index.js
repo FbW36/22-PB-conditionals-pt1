@@ -64,7 +64,7 @@ let val5 = 35;
 let val6 = 67;
 let sum = val5 + val6;
 
-if (sum < 80 && sum > 50) {
+if (sum <= 80 && sum >= 50) {
   console.log("Sum between 50-80==>", 65);
 } else {
   console.log("Sum outside of 50-80==>", 80);
