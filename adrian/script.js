@@ -27,10 +27,11 @@ let givenString = "hello";
 let newString = `Py${givenString}`;
 let originalString = "The original string?";
 if (givenString.slice(0, 2) === "Py") console.log(originalString);
+else console.log(newString);
 // Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80.
 let integer3 = 34;
 let integer4 = 17;
-if (integer3 + integer4 > 50 && integer3 + integer4 < 70) console.log(65);
+if (integer3 + integer4 >= 50 && integer3 + integer4 <= 80) console.log(65);
 else console.log(80);
 
 // Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
@@ -58,3 +59,5 @@ let specifiedNumber = 20;
 if (specifiedNumber - 19 > 0) console.log(2 * (specifiedNumber - 19));
 
 // BONUS CHALLENGE: Play around with each of your results, i.e., make sure they are dynamic to different inputs; is there a more efficient way of writing your code?; etc.
+
+//Check whether one of two integers is a multiple of 7 or 11. If so, print true.
