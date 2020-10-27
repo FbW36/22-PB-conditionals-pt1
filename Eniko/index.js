@@ -1,6 +1,7 @@
 // Check if two given integer values are in the range 50 to 99 (this includes both 50 and 99). Print true if either of them are in the range.
 let value = 101;
-console.log("Is the value beween 50-99?", value <= 99 && value >= 50);
+let otherValue = 77;
+console.log("Is at least one value beween 50-99?", (value <= 99 && value >= 50) || (otherValue <= 99 && otherValue >= 50));
 
 // Check if three given integer values are in the range 50 to 99 (inclusive). Print true if one or more of them are in the range.
 let value1 = 50;
@@ -42,7 +43,7 @@ if(one + two > 50 && one + two < 80){
 }
 
 // Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
-if(one % two == 0 || one % two == 8){
+if(one + two == 0 || one - two == 8){
     console.log("true")
 }else{
     console.log("false");
@@ -51,11 +52,12 @@ if(one % two == 0 || one % two == 8){
 // Check whether either one of two integers is 15, or if their sum is 15. If one of these is the case, print true.
 let value4 = 15;
 let value5 = 14;
-console.log("Are at least one value 15?", value4 === 15 || value5 === 15);
+console.log("Are at least one value 15?", value4 === 15 || value5 === 15 || value4 + value5 === 15);
 
 // Check whether one of two integers is a multiple of 7 or 11. If so, print true.
 let value6 = 77;
-console.log("Is 77 a multiple of 7 or 11?", value6 % 7 === 0 || value6 % 11 === 0);
+let value66 = 6;
+console.log("Is 77 or 6 a multiple of 7 or 11?", ((value6 % 7 === 0 || value6 % 11 === 0) || (value66 % 7 === 0 || value66 % 11 === 0)));
 
 // Calculate the sum of the two given integers. If the two values are the same, then print triple their sum.
 let value7 = 5;
