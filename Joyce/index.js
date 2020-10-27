@@ -1,10 +1,8 @@
 // 1.
 let num1 = 28;
 let num2 = 59;
-let res1 = num1 >= 50 || num1 <= 99;
-let res2 = num2 >= 50 || num2 <= 99;
 
-if (res1 || res2) {
+if (num1 >= 50 && num1 <= 99 && num2 >= 50 && num2 <= 99) {
   console.log(true);
 } else {
   console.log(false);
@@ -15,9 +13,9 @@ let value1 = 40;
 let value2 = 78;
 let value3 = 101;
 
-let resValue1 = value1 >= 50 || value1 <= 99;
-let resValue2 = value2 >= 50 || value2 <= 99;
-let resValue3 = value3 >= 50 || value3 <= 99;
+let resValue1 = value1 >= 50 && value1 <= 99;
+let resValue2 = value2 >= 50 && value2 <= 99;
+let resValue3 = value3 >= 50 && value3 <= 99;
 
 if (resValue1 || resValue3 || resValue3) {
   console.log(true);
@@ -58,7 +56,7 @@ if (str2.slice(0, 2) === "Py") {
 let x = 37;
 let y = 28;
 
-if (x + y > 50 && x + y < 80) {
+if (x + y >= Math.round(50) && x + y <= Math.round(80)) {
   console.log(65);
 } else {
   console.log(80);
@@ -68,7 +66,7 @@ if (x + y > 50 && x + y < 80) {
 let x1 = 4;
 let y1 = 12;
 
-if (x1 + y1 === 8 || x1 - y1 === 8) {
+if (x1 + y1 === 8 || x1 - y1 === 8 || Math.abs(y1 - x1) === 8) {
   console.log(true);
 }
 
@@ -84,7 +82,7 @@ if (x2 === 15 || y2 === 15 || x2 + y2 === 15) {
 let x3 = 35;
 let y3 = 80;
 
-if (x3 % 7 === 0 || y3 % 11 === 0) {
+if (x3 % 7 == 0 || x3 % 11 == 0 || y3 % 7 == 0 || y3 % 11 == 0) {
   console.log(true);
 }
 
