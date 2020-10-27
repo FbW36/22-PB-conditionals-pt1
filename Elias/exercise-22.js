@@ -75,7 +75,7 @@ if (num4 === num5) {
    console.log(sum3 * 3);
 }
 
-let num6 = 50;
+let num6 = 1005;
 
 if (num6 - 19 > 19) {
     let sum4 = num6 - 19;
