@@ -53,7 +53,7 @@ if(str2.substring(0,2)== 'Py'){
 //5. Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80.
 let integer1 = 10
 let integer2 = 20
-let sum = integer1 + integer2
+let sum = Math.abs(integer1 + integer2)
 if(sum >= 50 && sum <= 80){
     console.log(`${sum} is the result so => 65`)
 }else{
@@ -63,8 +63,8 @@ if(sum >= 50 && sum <= 80){
 //6. Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
 let integer3 = 10
 let integer4 = 2
-let sumIntegers = integer3 + integer4
-let diffintegers = integer3 - integer4
+let sumIntegers = Math.abs(integer3 + integer4)
+let diffintegers = Math.abs(integer3-integer4)
 
 if((sumIntegers == 8) || (diffintegers == 8)){
     console.log(true)
@@ -96,7 +96,7 @@ if((integer7 % 7 == 0 || integer7 % 11 == 0) || (integer8 % 7 == 0 || integer8 %
 //9. Calculate the sum of the two given integers. If the two values are the same, then print triple their sum.
 let integer9 = 10
 let integer10 = 10
-let sum9 = integer9 + integer10
+let sum9 = Math.abs(integer9 + integer10)
 if(integer9 == integer10){
     console.log("Exercise 9 => numbers are the same", sum9 * 3)
 }else{
@@ -106,7 +106,7 @@ if(integer9 == integer10){
 //10. Calculate the difference between a specified number and 19. Print double the difference if the specified number is greater than 19.
 let integer11 = 12
 let integer12 = 19
-let sum10 = integer11 - integer12
+let sum10 = Math.abs(integer11 - integer12)
 if(integer11 > integer12){
     console.log(`Exercise 10 => ${integer11} is greater than 19 (double difference)=>`,sum10*2 )
 }else{
