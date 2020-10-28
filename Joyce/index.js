@@ -58,7 +58,7 @@ if (str2.slice(0, 2) === "Py") {
 let x = 37;
 let y = 28;
 
-if (x + y >= Math.round(50) && x + y <= Math.round(80)) {
+if (x + y > 50 && x + y < 80) {
   console.log(65);
 } else {
   console.log(80);
