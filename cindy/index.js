@@ -53,7 +53,7 @@ if(str2.substring(0,2)== 'Py'){
 //5. Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80.
 let integer1 = 10
 let integer2 = 20
-let sum = Math.abs(integer1 + integer2)
+let sum = (integer1 + integer2)
 if(sum >= 50 && sum <= 80){
     console.log(`${sum} is the result so => 65`)
 }else{
@@ -63,7 +63,7 @@ if(sum >= 50 && sum <= 80){
 //6. Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
 let integer3 = 10
 let integer4 = 2
-let sumIntegers = Math.abs(integer3 + integer4)
+let sumIntegers = (integer3 + integer4)
 let diffintegers = Math.abs(integer3-integer4)
 
 if((sumIntegers == 8) || (diffintegers == 8)){
@@ -96,7 +96,7 @@ if((integer7 % 7 == 0 || integer7 % 11 == 0) || (integer8 % 7 == 0 || integer8 %
 //9. Calculate the sum of the two given integers. If the two values are the same, then print triple their sum.
 let integer9 = 10
 let integer10 = 10
-let sum9 = Math.abs(integer9 + integer10)
+let sum9 = (integer9 + integer10)
 if(integer9 == integer10){
     console.log("Exercise 9 => numbers are the same", sum9 * 3)
 }else{
