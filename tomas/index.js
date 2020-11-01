@@ -1,12 +1,12 @@
 let log = console.log;
 
 // Check if two given integer values are in the range 50 to 99 (this includes both 50 and 99). Print true if either of them are in the range
-let x = 1;
-let y = 100;
-let result;
-if((x < 50 || x > 99) && (y < 50 || y > 99)) {
-    log('either of two integers are in range -->', result = true);
+let x = 49.99999999999999;
+let y = 99.00000000000001;
+if((x >= 50 && x <= 99) || (y >= 50 && y <= 99)) {
+    log('either of two integers are in range -->', true);
 }
+
 
 
 // Check if three given integer values are in the range 50 to 99 (inclusive). Print true if one or more of them are in the range
@@ -57,7 +57,7 @@ if((x2 + y2) == 8 || (x2 - y2) == 8) {
 // Check whether either one of two integers is 15, or if their sum is 15. If one of these is the case, print true
 let x3 = 7;
 let y3 = 8;
-if((x3 != 15 && y3 != 15) || (x3 + y3 == 15)) {
+if((x3 == 15 || y3 == 15) || (x3 + y3 == 15)) {
     log('7 -->', true);
 }
 
