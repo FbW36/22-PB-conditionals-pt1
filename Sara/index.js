@@ -108,4 +108,6 @@ if(num9 > 19) {
     console.log(diff * 2) ;
 }else{
     console.log('false') ;
-} // 
+} // false 
+
+
