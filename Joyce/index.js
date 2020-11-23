@@ -3,7 +3,7 @@ let num1 = 28;
 let num2 = 59;
 
 if ((num1 >= 50 && num1 <= 99) || (num2 >= 50 && num2 <= 99)) {
-  console.log(true);
+  console.log("two given integer values are in the range 50 to 99 ==>", true);
 } else {
   console.log(false);
 }
@@ -18,7 +18,7 @@ let resValue2 = value2 >= 50 && value2 <= 99;
 let resValue3 = value3 >= 50 && value3 <= 99;
 
 if (resValue1 || resValue3 || resValue3) {
-  console.log(true);
+  console.log("three given integer values are in the range 50 to 99 ==>", true);
 }
 
 // 3. Declare the variables a, b and c, and give them number values.
@@ -28,23 +28,12 @@ let a = 18;
 let b = 40;
 let c = 88;
 
-if (
-  a === Math.max(a, b, c) ||
-  b === Math.max(a, b, c) ||
-  c === Math.max(a, b, c)
-) {
-  console.log(Math.max(a, b, c));
-  a = 99;
-  b = 33;
-  c = 59;
-  if (
-    a === Math.max(a, b, c) ||
-    b === Math.max(a, b, c) ||
-    c === Math.max(a, b, c)
-  ) {
-    console.log(Math.max(a, b, c));
-  }
-}
+console.log("The largest value is: ", Math.max(a, b, c));
+
+a = 29;
+b = 20;
+c = 8;
+console.log("The largest value is: ", Math.max(a, b, c));
 
 // 4. Create a new string adding "Py" in front of a given string. If the given string begins with "Py" then print the original string.
 let str1 = "Javascript";
@@ -58,7 +47,7 @@ if (str2.slice(0, 2) === "Py") {
 let x = 37;
 let y = 28;
 
-if (x + y > 50 && x + y < 80) {
+if (x + y >= 50 && x + y <= 80) {
   console.log(65);
 } else {
   console.log(80);
@@ -84,7 +73,7 @@ if (x2 === 15 || y2 === 15 || x2 + y2 === 15) {
 let x3 = 35;
 let y3 = 80;
 
-if (x3 % 7 == 0 || x3 % 11 == 0 || y3 % 7 == 0 || y3 % 11 == 0) {
+if (x3 % 7 === 0 || x3 % 11 === 0) {
   console.log(true);
 }
 
